@@ -1,0 +1,9 @@
+replicaCount: 3
+image:
+  repository: dashshishir/blue-green
+  tag: 1.0
+  pullPolicy: Always
+containerPort: 5000
+serviceName: my-app
+
+
