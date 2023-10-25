@@ -1,7 +1,7 @@
 replicaCount: 3
 image:
   repository: dashshishir/blue-green
-  tag: "2.0"
+  tag: <+serviceVariables.IMAGE_TAG>
   pullPolicy: Always
 containerPort: 5000
 appName: app
