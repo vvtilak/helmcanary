@@ -11,7 +11,7 @@ spec:
     protocol: TCP
     port: {{ .Values.containerPort }}
   selector:
-    app: {{ .Values.appName }}
+    app: {{ .Release.Name }}-app
 ---
 apiVersion: v1
 kind: Service
@@ -26,4 +26,4 @@ spec:
     protocol: TCP
     port: {{ .Values.containerPort }}
   selector:
-    app: {{ .Values.appName }}
+    app: {{ .Release.Name }}-app

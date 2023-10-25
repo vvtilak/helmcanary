@@ -4,6 +4,6 @@ image:
   tag: "1.0"
   pullPolicy: Always
 containerPort: 5000
-appName: my-app
+appName: app
 
 
