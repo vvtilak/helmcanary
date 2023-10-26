@@ -5,7 +5,7 @@ metadata:
   annotations:
     harness.io/primary-service: "true"
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - name: http
     protocol: TCP
@@ -20,7 +20,7 @@ metadata:
   annotations:
     harness.io/stage-service: "true"
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - name: http
     protocol: TCP
